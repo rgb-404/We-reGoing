@@ -1,6 +1,6 @@
 button.main {
     background-color: lightblue;
-
+    font-size: x-large;
 
 }
 
@@ -15,7 +15,16 @@ body {
     
 }
 
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 button {
     display: block; /* Makes the button a block element*/
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 300px;
+
+
 }
