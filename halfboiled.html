@@ -8,6 +8,13 @@
 
     <body>
         <div class = "main">
+            <div id="timerDisplay">07:00</div>
+
+            <!-- Buttons to control timer -->
+            <button id="start" onclick="startTimer()">Start</button>
+            <button id="pause" onclick="pauseTimer()" disabled>Pause</button>
+            <button id="snooze" onclick="snoozeTimer()" disabled>Snooze</button>
+
             <!-- back button -->
             <button id = "back" onclick = "window.history.back()">go back!</button>
         </div>
