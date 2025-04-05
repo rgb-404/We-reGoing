@@ -67,7 +67,6 @@ function startTimer(eggType) {
             break;
     }
 
-    updateTimerDisplay();
 
     // pause timer if already running
     if (isTimerRunning) {
