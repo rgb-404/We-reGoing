@@ -1,5 +1,8 @@
 function EggPage(eggType) {
     switch(eggType) {
+        case 'landing':
+            window.location.href = 'landing.html';
+            break;
         case 'half':
             window.location.href = 'halfboiled.html';
             break;
