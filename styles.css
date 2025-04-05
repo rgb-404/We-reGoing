@@ -1,8 +1,30 @@
 button.main {
     background-color: lightblue;
+    font-size: x-large;
+
+}
+
+.eggtype {
+    background-color: lightpink;
+    
 }
 
 
-button.eggtype#half {
-    background-color: lightpink;
+body {
+    background-color: lightpink
+    
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    display: block; /* Makes the button a block element*/
+    margin: auto;
+    margin-top: 300px;
+
+
 }
