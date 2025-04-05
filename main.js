@@ -70,8 +70,12 @@ function startTimer() {
     
     if (isTimerRunning) return;
 
+    document.getElementById("startButton").textContent = "Stop";
+    isTimerRunning = true;
+    startCountdown();
+}
 
-
+function startCountdown() {
     timer = setInterval(function() {
         if (secsRemaining > 0) {
             secsRemaining--;  // Decrease by 1 second
@@ -79,8 +83,7 @@ function startTimer() {
         } else {
             clearInterval(timer);
             isTimerRunning = false;
-            document.getElementById("startButton").disabled = true; 
-            document.getElementById("pauseButton").disabled = true;
+            document.getElementById("startButton").textContent = "Snooze";  // Change button to Snooze
             document.getElementById("snoozeButton").disabled = false;
         }
     }, 1000);
