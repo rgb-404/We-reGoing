@@ -1,8 +1,21 @@
 button.main {
     background-color: lightblue;
+
+
+}
+
+.eggtype {
+    background-color: lightpink;
+    
 }
 
 
-button.eggtype#half {
-    background-color: lightpink;
+body {
+    background-color: lightpink
+    
+}
+
+button {
+    display: block; /* Makes the button a block element*/
+    margin: 0 auto;
 }
