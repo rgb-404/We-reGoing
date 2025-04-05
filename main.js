@@ -73,12 +73,19 @@ function startTimer() {
 
 
     timer = setInterval(function() {
-        
-    }
-
-
-    ) 
+        if (secsRemaining > 0) {
+            secsRemaining--;  // Decrease by 1 second
+            updateTimerDisplay();
+        } else {
+            clearInterval(timer);
+            isTimerRunning = false;
+            document.getElementById("startButton").disabled = true; 
+            document.getElementById("pauseButton").disabled = true;
+            document.getElementById("snoozeButton").disabled = false;
+        }
+    }, 1000);
 }
+
 
 
 
@@ -86,9 +93,26 @@ function startTimer() {
 
 
 function pauseTimer() {
-    
+    clearInterval(timer);
+    isTimerRunning = false;
+    document.getElementById("startButton").disabled = false;
+    document.getElementById("pauseButton").disabled = true;
 }
 
+
+
+
 function snoozeTimer() {
-    
+    secondsRemaining = 60;  // snooze for a minute
+    updateTimerDisplay();
+    startCountdown();  // restart the timer after snooze
+}
+
+
+function updateTimerDisplay() {
+    let minutes = Math.floor(secsRemaining / 60);
+    let seconds = secsRemaining % 60;
+
+    document.getElementById("timerDisplay").textContent =
+        (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
 }
