@@ -25,6 +25,7 @@ button {
     display: block; /* Makes the button a block element*/
     margin: auto;
     margin-top: 300px;
+    font-family: 100px;
 
 
 }
