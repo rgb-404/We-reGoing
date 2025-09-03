@@ -24,6 +24,13 @@ Inspired by @nashallery on Instagram
 We-reGoing/
 ├── assets/
 ├── index.html
-├── style.css
-└── index.js
+├── landing.html
+├── halfboiled.html
+├── scrambled.html
+├── softboiled.html
+├── hardboiled.html
+├── poached.html
+├── fried.html
+├── styles.css
+└── main.js
 ```
