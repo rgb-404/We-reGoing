@@ -32,8 +32,10 @@ button {
 }
 
 header {
-    gap: 50px;
-    padding: 25px;
+    width: 550px;
+    height: 65px;
+    padding: 10px 25px 5px 25px;
+    
 
     display: inline-flex;
     justify-content: flex-start;
@@ -57,12 +59,23 @@ header {
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 142.857% */
+    line-height: 50px; 
+}
+
+.main-content {
+    border: 3px solid;
+    border-color: var(--border-red);
+    background-color: var(--inner-red);
+
+    padding: 0px 25px, 10px, 25px;
+    width: 550px;
+    height: 770px;
+    flex-shrink: 0;
 }
 
 
-
-
-
 /* home page */
-
+#intro-img {
+    width: 360px;
+    height: 480px;
+}
