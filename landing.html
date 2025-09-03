@@ -10,16 +10,21 @@
         
         <!-- header; titlecard, close and back buttons -->
         <header>
-            <h2 class = "titlecards">welcome to your egg timer!</h2>
-            <button class = "img-btn" id = "close-btn">
-                <img src = "assets/close.png" alt = "closepng" class = "img-btn"/>
+            <h2 class = "titlecards">eggsullent eggs</h2>
+            
+            
+            <button class = "img-btn" id = "back-btn">
                 <img src = "assets/back.png" alt = "backpng" class = "img-btn"/>
             </button>
+            <button class = "img-btn" id = "close-btn">
+                <img src = "assets/close.png" alt = "closepng" class = "img-btn"/>
+            </button>
+
         </header>
 
 
 
-        <div class = "main">
+        <div class = "main-content">
             <!-- buttons for the egg types -->
             <button class = "eggtype" id = "half" onclick = "EggPage('half')">half boiled</button>
             <button class = "eggtype" id = "scramble" onclick = "EggPage('scrambled')">scrambled</button>
@@ -28,8 +33,6 @@
             <button class = "eggtype" id = "poach" onclick = "EggPage('poached')">poached</button>
             <button class = "eggtype" id = "fried" onclick = "EggPage('fried')">fried</button>
 
-            <!-- back button -->
-            <button id = "back" onclick = "window.history.back()">go back!</button>
         </div>
 
 
