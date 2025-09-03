@@ -1,11 +1,19 @@
+
+/* Import Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 /* global variables */
+
+* {
+    font-family: 'Lato';
+    font-size: 36px;
+}
 
 :root {
     --border-red: #b63c3e;
     --inner-red: #ffa7a9;
     --outer-red: #ff9595;
     --button-red: #ffd3d4;
-    font-family: Lato;
 
 }
 
@@ -20,6 +28,10 @@ body {
     border: 0px;
 
     background-color: var(--outer-red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
@@ -31,16 +43,20 @@ button {
     border: 0px
 }
 
+button:hover {
+    transform: scale(1.1);
+}
+
 header {
     width: 550px;
     height: 65px;
-    padding: 10px 25px 5px 25px;
     
-
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
 }
+
+
 
 
 
@@ -64,13 +80,18 @@ header {
 
 .main-content {
     border: 3px solid;
+    border-radius: 10px;
     border-color: var(--border-red);
     background-color: var(--inner-red);
 
-    padding: 0px 25px, 10px, 25px;
     width: 550px;
-    height: 770px;
-    flex-shrink: 0;
+    height: 760px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -78,4 +99,12 @@ header {
 #intro-img {
     width: 360px;
     height: 480px;
+}
+
+#start-btn {
+    margin-top: 50px;
+    padding: 5px 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--button-red);
 }
