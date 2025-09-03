@@ -1,0 +1,68 @@
+/* global variables */
+
+:root {
+    --border-red: #b63c3e;
+    --inner-red: #ffa7a9;
+    --outer-red: #ff9595;
+    --button-red: #ffd3d4;
+    font-family: Lato;
+
+}
+
+
+/* type specifications across pages */
+
+
+body {
+    height: 850px;
+    width: 600px;
+    border-radius: 10px;
+    border: 0px;
+
+    background-color: var(--outer-red);
+}
+
+img {
+    border: 0px;
+}
+
+button {
+    border-radius: 10px;
+    border: 0px
+}
+
+header {
+    gap: 50px;
+    padding: 25px;
+
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+/* class specifications across pages */
+
+.img-btn {
+    padding: 0;
+    height: 50px;
+    width: 50px;
+}
+
+.titlecards {
+    margin-right: auto;
+
+    text-align: center;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 142.857% */
+}
+
+
+
+
+
+/* home page */
+
