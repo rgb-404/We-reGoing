@@ -23,10 +23,3 @@ function EggPage(eggType) {
             break;
     }
 }
-
-
-function backPage(backFrom) {
-    if (backFrom == 'landing') {
-        window.location.href = 'index.html';
-    } else window.location.href = 'landing.html';
-}
