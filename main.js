@@ -1,5 +1,4 @@
-
-
+// instead of 'onclick' in html, keeping a constant works more reliably
 const playPauseBtn = document.getElementById('playPause-img');
 
 // flag for play/pause; true means play visible, false means pause visible
