@@ -7,16 +7,44 @@
     </head>
 
     <body>
-        <div class = "main">
-            <div id="timerDisplay">07:00</div>
+        
 
-            <!-- Buttons to control timer -->
-            <button id="timerControlButton" onclick="startTimer('half')">Start</button>
+        <!-- header; titlecard, close and back buttons -->
+        <header>
+            <h2 class = "titlecards">eggsullent eggs</h2>
+            
+            
+            <button class = "img-btn" onclick = "backPage('landing')" class = "img-btn" id = "back-btn">
+                <img src = "assets/back.png" alt = "backpng" class = "img-btn"/>
+            </button>
+            <button class = "img-btn" class = "img-btn" id = "close-btn">
+                <img src = "assets/close.png" alt = "closepng" class = "img-btn"/>
+            </button>
 
+        </header>
+        
+        
 
-            <!-- back button -->
-            <button id = "back" onclick = "window.history.back()">go back!</button>
+        <!-- main content section; image, timer and start/stop, restart buttons in their own containers -->
+        <div class = "main-content" id = "main-timer-content">
+
+            <div class = "timer-img-container">
+                <img src = "assets/halfboil.png" alt = "halfboilpng" class = "timer-img">
+            </div>
+
+            <div class = "timer-container">
+                <div id = "actual-timer">07:00</div>
+            </div>
+
+            <div class = "timer-btns-container">
+                <button class = "timer-btn">S-P</button>
+                <button class = "timer-btn">Reset</button>
+
+            </div>
+
         </div>
+
+        
         <script src = "main.js"></script>
     </body>
 </html>
