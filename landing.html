@@ -13,10 +13,10 @@
             <h2 class = "titlecards">eggsullent eggs</h2>
             
             
-            <button class = "img-btn" id = "back-btn">
+            <button class = "img-btn" id = "back-btn" class = "img-btn">
                 <img src = "assets/back.png" alt = "backpng" class = "img-btn"/>
             </button>
-            <button class = "img-btn" id = "close-btn">
+            <button class = "img-btn" id = "close-btn" class = "img-btn">
                 <img src = "assets/close.png" alt = "closepng" class = "img-btn"/>
             </button>
 
@@ -24,14 +24,39 @@
 
 
 
+        <!-- 6 'container' elements for the 6 egg options -->
         <div class = "main-content">
-            <!-- buttons for the egg types -->
-            <button class = "eggtype" id = "half" onclick = "EggPage('half')">half boiled</button>
-            <button class = "eggtype" id = "scramble" onclick = "EggPage('scrambled')">scrambled</button>
-            <button class = "eggtype" id = "soft" onclick = "EggPage('soft')">soft boiled</button>
-            <button class = "eggtype" id = "hard" onclick = "EggPage('hard')">hard boiled</button>
-            <button class = "eggtype" id = "poach" onclick = "EggPage('poached')">poached</button>
-            <button class = "eggtype" id = "fried" onclick = "EggPage('fried')">fried</button>
+
+            <div class = "egg" id = "half">
+                <img src = "assets/halfboil.png" alt = "halfboilpng" id = "halfboil-img">  
+                <button class = "eggtype" id = "half" onclick = "EggPage('half')">half boiled</button>
+            </div>
+            
+            <div class = "egg" id = "scramble">
+                <img src = "assets/scrambled.png" alt = "scrambledpng" id = "scrambled-img">  
+                <button class = "eggtype" id = "scramble" onclick = "EggPage('scrambled')">scrambled</button>
+            </div>
+            
+            <div class = "egg" id = "soft">
+                <img src = "assets/softboil.png" alt = "softboilpng" id = "softboil-img">  
+                <button class = "eggtype" id = "soft" onclick = "EggPage('soft')">soft boiled</button>
+            </div>
+            
+            <div class = "egg" id = "hard">
+                <img src = "assets/hardboil.png" alt = "hardboilpng" id = "hardboil-img">  
+                <button class = "eggtype" id = "hard" onclick = "EggPage('hard')">hard boiled</button>
+            </div>
+            
+            <div class = "egg" id = "poached">
+                <img src = "assets/poached.png" alt = "poachedpng" id = "poached-img">  
+                <button class = "eggtype" id = "poach" onclick = "EggPage('poached')">poached</button>
+            </div>
+            
+            <div class = "egg" id = "fried">
+                <img src = "assets/fried.png" alt = "friedpng" id = "fried-img">  
+                <button class = "eggtype" id = "fried" onclick = "EggPage('fried')">fried</button>
+            </div>
+
 
         </div>
 
