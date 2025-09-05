@@ -171,4 +171,4 @@ function resetTimer(currentEgg) {
 }
 
 
-playPauseBtn.addEventListener('click', toggleTimerBtn())
+playPauseBtn.addEventListener('click', toggleTimerBtn)
