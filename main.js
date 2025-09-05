@@ -1,3 +1,10 @@
+
+
+const playPauseBtn = document.getElementById('playPause-img');
+
+// flag for play/pause; true means play visible, false means pause visible
+let toStart = true;
+
 function EggPage(eggType) {
     switch(eggType) {
         case 'landing':
@@ -28,5 +35,25 @@ function EggPage(eggType) {
 function backPage(backFrom) {
     if (backFrom == 'landing') {
         window.location.href = 'index.html';
-    } else window.location.href = 'landing.html';
+    } else {
+        resetStartBtnImg();
+        window.location.href = 'landing.html';
+    } 
 }
+
+
+function resetStartBtnImg() {
+    toStart = true;
+    playPauseBtn.src = "assets/start.png";
+}
+
+function toggleTimerBtn() {
+    toStart = !toStart;
+    if (toStart) {
+        playPauseBtn.src = "assets/start.png";
+    } else {
+        playPauseBtn.src = "assets/pause.png"
+    }
+}
+
+playPauseBtn.addEventListener('click', toggleTimerBtn)
