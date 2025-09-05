@@ -4,6 +4,9 @@ const playPauseBtn = document.getElementById('playPause-img');
 // flag for play/pause; true means play visible, false means pause visible
 let toStart = true;
 
+
+
+// changes the page based on the button that's clicked by the user
 function EggPage(eggType) {
     switch(eggType) {
         case 'landing':
@@ -31,6 +34,8 @@ function EggPage(eggType) {
 }
 
 
+
+// works for the back button exclusively
 function backPage(backFrom) {
     if (backFrom == 'landing') {
         window.location.href = 'index.html';
@@ -41,6 +46,8 @@ function backPage(backFrom) {
 }
 
 
+
+// these three are for toggling the play-pause button image per click and context
 function resetStartBtnImg() {
     toStart = true;
     playPauseBtn.src = "assets/start.png";
@@ -56,3 +63,6 @@ function toggleTimerBtn() {
 }
 
 playPauseBtn.addEventListener('click', toggleTimerBtn)
+
+
+
