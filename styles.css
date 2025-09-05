@@ -116,6 +116,7 @@ header {
 
 
 
+
 /* landing page */
 
 .egg-container {    
@@ -141,4 +142,24 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+
+
+/* timer pages */
+
+.timer-img {
+    width: 400px;
+    height: 305px;
+}
+
+.timer-btn {
+    width: 100px;
+    height: 100px;
+    gap: 5px 10px;
+    border-radius: 45px;
+}
+
+#main-timer-content {
+    gap: 20px;
 }
