@@ -7,10 +7,52 @@
     </head>
 
     <body>
-        <div class = "main">
-            <!-- back button -->
-            <button id = "back" onclick = "window.history.back()">go back!</button>
+        
+
+        <!-- header; titlecard, close and back buttons -->
+        <header>
+            <h2 class = "titlecards">eggsullent eggs</h2>
+            
+            
+            <button class = "img-btn" onclick = "backPage('scrambled')" class = "img-btn" id = "back-btn">
+                <img src = "assets/back.png" alt = "backpng" class = "img-btn"/>
+            </button>
+            <button class = "img-btn" class = "img-btn" id = "close-btn">
+                <img src = "assets/close.png" alt = "closepng" class = "img-btn"/>
+            </button>
+
+        </header>
+        
+        
+
+        <!-- main content section; image, timer and start/stop, restart buttons in their own containers -->
+        <div class = "main-content" id = "main-timer-content">
+
+            <div class = "timer-img-container">
+                <img src = "assets/scrambled.svg" alt = "scrambledpng" class = "timer-img">
+            </div>
+
+            <div class = "timer-container">
+                <div class = "actual-timer">
+                    <span class = "actual-timer" id = "mins">04</span>:<span class = "actual-timer" id = "secs">30</span>
+                </div>
+            </div>
+
+            <div class = "timer-btns-container">
+                <button class = "timer-btn">
+                    <img src = "assets/start.png" alt = "playpng" class = "timer-btn-img" id = "playPause-img">
+                </button>
+                
+                <button class = "timer-btn" onclick = "resetTimer('scrambled')">
+                    <img src = "assets/reset.png" alt = "resetpng" class = "timer-btn-img" id = "reset-img">
+                </button>
+
+            </div>
+
         </div>
+
+
+
         <script src = "main.js"></script>
     </body>
 </html>
