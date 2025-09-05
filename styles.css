@@ -67,6 +67,7 @@ header {
     padding: 0;
     height: 50px;
     width: 50px;
+    gap: 10px;
 }
 
 .titlecards {
