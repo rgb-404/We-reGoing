@@ -24,41 +24,9 @@ fried = 3.5
 
 // changes the page based on the button that's clicked by the user
 function EggPage(eggType) {
-    switch(eggType) {
-        case 'landing':
-            window.location.href = 'landing.html';
-            break;
-        case 'half':
-            window.location.href = 'halfboiled.html';
-            minsLeft = 7;
-            secsLeft = 0;
-            break;
-        case 'soft':
-            window.location.href = 'softboiled.html';
-            minsLeft = 8;
-            secsLeft = 0;
-            break;
-        case 'hard':
-            window.location.href = 'hardboiled.html';
-            minsLeft = 10;
-            secsLeft = 0;
-            break;
-        case 'fried':
-            window.location.href = 'fried.html';
-            minsLeft = 3;
-            secsLeft = 30;
-            break;
-        case 'scrambled':
-            window.location.href = 'scrambled.html';
-            minsLeft = 4;
-            secsLeft = 30;
-            break;
-        case 'poached':
-            window.location.href = 'poached.html';
-            minsLeft = 3;
-            secsLeft = 0;
-            break;
-    }
+    sessionStorage.setItem('eggType', eggType);
+    window.location.href = eggType + ".html"
+    resetTimer(eggType)
 }
 
 
@@ -93,13 +61,22 @@ function toggleTimerBtn() {
 }
 
 
+window.onload = function() {
+    const eggType = sessionStorage.getItem('eggType');
+    if (eggType) {
+        resetTimer(eggType);
+    }
 
+    playPauseBtn.addEventListener('click', toggleTimerBtn)
+};
 
 
 // timer functionality:
 
 function toggleTimer() {    
+    // if the timer is running, otherwise needa pause
     if (started) {
+        // a constant updater for the time
         timer = setInterval(function() {
             if (secsLeft === 0) {
                 if (minsLeft ===0) {
@@ -130,20 +107,21 @@ function formattedTime(timeLeft) {
 }
 
 function resetTimer(currentEgg) {
+    
     switch(currentEgg) {
-        case 'half':
+        case 'halfboiled':
             minsLeft = 7;
             secsLeft = 0;
             document.getElementById("mins").textContent = "07";
             document.getElementById("secs").textContent = "00";
             break;
-        case 'soft':
+        case 'softboiled':
             minsLeft = 8;
             secsLeft = 0;
             document.getElementById("mins").textContent = "08";
             document.getElementById("secs").textContent = "00";
             break;
-        case 'hard':
+        case 'hardboiled':
             minsLeft = 10;
             secsLeft = 0;
             document.getElementById("mins").textContent = "10";
@@ -169,6 +147,3 @@ function resetTimer(currentEgg) {
             break;
     }
 }
-
-
-playPauseBtn.addEventListener('click', toggleTimerBtn)
