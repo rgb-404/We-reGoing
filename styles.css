@@ -1,0 +1,177 @@
+
+/* Import Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* global variables */
+
+* {
+    font-family: 'Lato';
+    font-size: 36px;
+}
+
+:root {
+    --border-red: #b63c3e;
+    --inner-red: #ffa7a9;
+    --outer-red: #ff9595;
+    --button-red: #ffd3d4;
+
+}
+
+
+/* type specifications across pages */
+
+
+body {
+    height: 850px;
+    width: 600px;
+    border-radius: 10px;
+    border: 0px;
+
+    background-color: var(--outer-red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border: 0px;
+}
+
+button {
+    background-color: var(--button-red);
+    border-radius: 10px;
+    border: 0px
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+header {
+    width: 550px;
+    height: 65px;
+    
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+
+/* class specifications across pages */
+
+.img-btn {
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    gap: 10px;
+}
+
+.titlecards {
+    margin-right: auto;
+
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; 
+}
+
+.main-content {
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: var(--border-red);
+    background-color: var(--inner-red);
+
+    width: 550px;
+    height: 760px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+/* home page */
+#intro-img {
+    width: 360px;
+    height: 480px;
+}
+
+#start-btn {
+    margin-top: 50px;
+    padding: 5px 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+
+
+
+
+/* landing page */
+
+.egg-container {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.egg-img {
+    width: 200px;
+    height: 153px;
+    margin-bottom: 15px;
+}
+
+.egg-btn {
+    width: fit-content;
+    height: 25px;
+    font-size: 18px;
+}
+
+#landing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+/* timer pages */
+
+.timer-img {
+    width: 400px;
+    height: 305px;
+}
+
+.timer-btn {
+    width: 100px;
+    height: 100px;
+    gap: 5px 10px;
+    border-radius: 45px;
+    margin: 10px;
+
+}
+
+.timer-btn-img {
+    width: 70px;
+    height: 70px;
+    
+}
+
+#main-timer-content {
+    gap: 30px;
+}
+
+#actual-timer {
+    font-size: 80px;
+}

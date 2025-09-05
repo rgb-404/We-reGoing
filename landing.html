@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "styles.css">
+        <title>egg timer!!!</title>
+    </head>
+
+    <body>
+        
+        <!-- header; titlecard, close and back buttons -->
+        <header>
+            <h2 class = "titlecards">eggsullent eggs</h2>
+            
+            
+            <button class = "img-btn" onclick = "backPage('landing')" class = "img-btn" id = "back-btn">
+                <img src = "assets/back.png" alt = "backpng" class = "img-btn"/>
+            </button>
+            <button class = "img-btn" class = "img-btn" id = "close-btn">
+                <img src = "assets/close.png" alt = "closepng" class = "img-btn"/>
+            </button>
+
+        </header>
+
+
+
+        <!-- 6 'container' elements for the 6 egg options -->
+        <div class = "main-content" id = "landing-container">
+
+            <div class = "egg-container">
+                <img src = "assets/halfboil.png" alt = "halfboilpng" class = "egg-img">  
+                <button class = "egg-btn" onclick = "EggPage('half')">half boiled</button>
+            </div>
+            
+            <div class = "egg-container">
+                <img src = "assets/scrambled.svg" alt = "scrambledpng" class = "egg-img">  
+                <button class = "egg-btn" onclick = "EggPage('scrambled')">scrambled</button>
+            </div>
+            
+            <div class = "egg-container">
+                <img src = "assets/softboil.svg" alt = "softboilpng" class = "egg-img">  
+                <button class = "egg-btn" onclick = "EggPage('soft')">soft boiled</button>
+            </div>
+            
+            <div class = "egg-container">
+                <img src = "assets/hardboil.svg" alt = "hardboilpng" class = "egg-img">  
+                <button class = "egg-btn" onclick = "EggPage('hard')">hard boiled</button>
+            </div>
+            
+            <div class = "egg-container">
+                <img src = "assets/poached.svg" alt = "poachedpng" class = "egg-img">  
+                <button class = "egg-btn" onclick = "EggPage('poached')">poached</button>
+            </div>
+            
+            <div class = "egg-container">
+                <img src = "assets/fried.png" alt = "friedpng" class = "egg-img">  
+                <button class = "egg-btn" onclick = "EggPage('fried')">fried</button>
+            </div>
+
+
+        </div>
+
+
+
+        <script src = "main.js"></script>
+    </body>
+</html>
