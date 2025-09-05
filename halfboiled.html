@@ -33,7 +33,9 @@
             </div>
 
             <div class = "timer-container">
-                <div id = "actual-timer">07:00</div>
+                <div class = "actual-timer">
+                    <span class = "actual-timer" id = "mins">07</span>:<span class = "actual-timer" id = "secs">00</span>
+                </div>
             </div>
 
             <div class = "timer-btns-container">
@@ -41,8 +43,8 @@
                     <img src = "assets/start.png" alt = "playpng" class = "timer-btn-img" id = "playPause-img">
                 </button>
                 
-                <button class = "timer-btn">
-                    <img src = "assets/reset.png" alt = "resetpng" class = "timer-btn-img">
+                <button class = "timer-btn" onclick = "resetTimer('half')">
+                    <img src = "assets/reset.png" alt = "resetpng" class = "timer-btn-img" id = "reset-img">
                 </button>
 
             </div>

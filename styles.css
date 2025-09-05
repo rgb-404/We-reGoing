@@ -168,10 +168,11 @@ header {
     
 }
 
+.actual-timer {
+    font-size: 80px;
+}
+
 #main-timer-content {
     gap: 30px;
 }
 
-#actual-timer {
-    font-size: 80px;
-}
