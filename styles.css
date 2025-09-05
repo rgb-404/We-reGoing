@@ -117,3 +117,28 @@ header {
 
 
 /* landing page */
+
+.egg-container {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.egg-img {
+    width: 200px;
+    height: 153px;
+    margin-bottom: 15px;
+}
+
+.egg-btn {
+    width: fit-content;
+    height: 25px;
+    font-size: 18px;
+}
+
+#landing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
