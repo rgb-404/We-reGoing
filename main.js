@@ -66,8 +66,6 @@ window.onload = function() {
     if (eggType) {
         resetTimer(eggType);
     }
-
-    playPauseBtn.addEventListener('click', toggleTimerBtn)
 };
 
 
@@ -147,3 +145,5 @@ function resetTimer(currentEgg) {
             break;
     }
 }
+
+playPauseBtn.addEventListener('click', toggleTimerBtn)
